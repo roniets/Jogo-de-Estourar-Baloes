@@ -1,0 +1,73 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<script src="js/jogo.js"></script>
+
+	</head>
+
+	<body onload="iniciaJogo()" style="background-image: url('imagens/fundo_index.jpg'); background-size: auto; background-attachment: fixed; background-repeat: no-repeat;">
+
+		<div class="container" style="min-width: 750px; margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+		<div class="col-3 border border-primary mr-1" style="float: left; width: 145px; height: 500px; background: #fff; overflow: hidden;">
+			<table>
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande.png">
+					</td>
+					<td>
+						<span id="baloes_inteiros" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table>
+				<tr>
+					<td>
+						<img src="imagens/balao_azul_grande_estourado.png">
+					</td>
+					<td>
+						<span id="baloes_estourados" style="font-size: 40px;"></span>
+					</td>
+				</tr>
+			</table>
+			<br>
+			<table style="width: 140px; height: 132px;">
+				<tr>
+					<td style="background: url('imagens/cronometro.png'); text-align: center;">
+						<span id="cronometro" style="color: red; font-size: 30px;"></span>
+					</td>
+				</tr>
+			</table>
+
+			<br>
+			<table>
+				<tr>
+					<td>
+						<a class="btn btn-primary" href="index.html">VOLTAR</a>
+					</td>
+				</tr>
+			</table>
+
+		</div>
+
+		<div class="col-9 border border-primary" id="cenario" style="float: left; width: auto; height: auto; min-height: 500px; background: url('imagens/cenario.png'); background-position: bottom; background-size: cover;">
+		</div>
+	
+		</div>
+
+	<script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+	</body>
+	
+</html>

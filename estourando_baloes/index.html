@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8">
+
+		<title>Estourando balões</title>
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1"> 
+
+    	<link rel="stylesheet" href="css/bootstrap.min.css">
+
+		<script language='Javascript'>
+
+			function iniciaJogo(){
+				var nivel_jogo = document.getElementById('nivel_jogo').value;
+
+				window.location.href = 'jogo.html?'+nivel_jogo;
+			}
+			
+		</script>
+	</head>
+
+	<body style="background-image: url('imagens/fundo_index.jpg'); background-size: auto; background-attachment: fixed; background-repeat: no-repeat;">
+
+		<div class="container bg-white border border-success rounded p-5 middle" style="max-width: 200px; text-align: center; margin: 0; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
+			<p>
+				<b>Nível: </b>
+
+				<select id="nivel_jogo" class="btn btn-outline-primary">
+					<option value="1">Fácil</option>
+					<option value="2">Normal</option>
+					<option value="3">Difícil</option>
+				</select>
+			</p>
+			<br>
+			<img class="btn btn-primary rounded img-fluid" src="imagens/iniciar.png" onclick="iniciaJogo()">
+		</div>
+
+	<script src="js/jquery.slim.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+
+	</body>
+	
+</html>
